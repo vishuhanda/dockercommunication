@@ -1,7 +1,12 @@
 version: '3'
 
+
 services:
   apiservice:
+    env_file:
+      - default.env
+#    environment:
+#        SECRET_ENV: my_secret_from_dot_env_file
     build:
       context: .
       dockerfile: Dockerfile_node

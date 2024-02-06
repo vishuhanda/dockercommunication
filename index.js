@@ -7,5 +7,6 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
+  console.log("hello" + process.env.SECRET_ENV)
   console.log(`Example app listening on port ${port}`)
 })
